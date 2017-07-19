@@ -1,0 +1,104 @@
+@import "./normalize/document.scss";
+@import "./normalize/body.scss";
+@import "./normalize/h.scss";
+@import "./normalize/list.scss";
+@import "./normalize/link.scss";
+@import "./normalize/table.scss";
+@import "./normalize/img.scss";
+@import "./normalize/p.scss";
+@import "./normalize/form.scss";
+@import "./normalize/emphasize.scss";
+@import "./normalize/vue.scss";
+@import "./normalize/subscript.scss";
+@import "./normalize/progress.scss";
+
+/* 文本的语义
+   ========================================================================== */
+
+/**
+ * 1. 移除边框 在 Chrome 57- 和 Firefox 39-.
+ * 2. 取消下划线 in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: none; /* 2 */
+}
+
+/**
+ * 设置通用字号
+ */
+
+code,
+kbd,
+samp {
+  font-size: $base-font-size;
+}
+
+/**
+ * 取消斜体等字体样式 in Android 4.3-.
+ */
+
+dfn {
+  font-style: normal;
+}
+
+/**
+ * 重置 background 和 color in IE 9-.
+ */
+
+mark {
+  background: none;
+  color: #333;
+}
+
+/**
+ * 通用字号
+ */
+
+small {
+  font-size: $base-font-size;
+}
+
+/* 嵌入的内容
+   ========================================================================== */
+
+/**
+ * 溢出隐藏 in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**
+ * 显示正常 in Firefox.
+ */
+
+fieldset {
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 正常显示 in IE.
+ */
+
+template {
+  display: none;
+}

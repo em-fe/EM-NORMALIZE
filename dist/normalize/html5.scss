@@ -1,0 +1,53 @@
+/**
+ * 在浏览器中添加正确的显示.
+ */
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 0;
+}
+
+/* 互动
+   ========================================================================== */
+
+/*
+ * 正常显示 in IE 9-.
+ * 1. 正常显示 in Edge, IE, and Firefox.
+ */
+
+details, menu {
+  display: block;
+}
+
+/*
+ * 正常显示 in all browsers.
+ */
+
+summary {
+  display: list-item
+}
+
+summary:focus {
+    outline: none;
+}
+
+/* 脚本
+   ========================================================================== */
+
+/**
+ * 正常显示 in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}

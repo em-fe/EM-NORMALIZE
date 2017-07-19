@@ -1,0 +1,12 @@
+/**
+ * 1. 正常显示 in IE 9-.
+ * 2. 添加对齐方式 in Chrome, Firefox, and Opera.
+ * 3. 恢复默认
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+  border: none; /* 3 */
+  background: none; /* 3 */
+}

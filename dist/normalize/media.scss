@@ -1,0 +1,16 @@
+/**
+ * 在浏览器中添加正确的显示. in IE 9-.
+ */
+
+audio, video {
+  display: inline-block;
+}
+
+/**
+ * 在浏览器中添加正确的显示. in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}

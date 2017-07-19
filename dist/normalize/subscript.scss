@@ -1,0 +1,15 @@
+/**
+ * 防止 `sub` and `sup` 影响所有浏览器的行高度的元素。
+ */
+sub, sup {
+  font-size: 14px;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
