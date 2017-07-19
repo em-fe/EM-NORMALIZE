@@ -1,0 +1,142 @@
+/**
+ * 1. 浏览器中改变样式.
+ * 2. 移除外边距 in Firefox and Safari.
+ */
+input, optgroup, select, textarea {
+  font-family: '微软雅黑'; /* 1 */
+  font-size: 14px; /* 1 */
+  margin: 0; /* 2 */
+}
+/**
+ * 溢出隐藏 in IE.
+ * 1. 显示溢出 in Edge.
+ */
+input {
+  overflow: visible; /* 1 */
+}
+/**
+ * 删除文本转换的继承 in Edge, Firefox, and IE.
+ * 1. 删除文本转换的继承 in Firefox.
+ */
+select {
+  text-transform: none; /* 1 */
+  outline: none
+}
+select:focus {
+    outline: none
+}
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+[type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button /* 2 */
+}
+[type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    // 移除内联边框和内边距 in Firefox.
+    border-style: none;
+    padding: 0;
+    // 取消外边框.
+    outline: none
+}
+/** button
+ * 1. 浏览器中改变样式.
+ * 2. 移除外边距 in Firefox and Safari.
+ * 3. 删除文本转换的继承 in Firefox
+ * 4. 背景，边框，内边距
+ * 5. 显示溢出 in Edge.
+ * 6. 自定义样式 in Chrome and Safari.
+ */
+button, [type="button"] {
+  font-family: '微软雅黑'; /* 1 */
+  font-size: 14px; /* 1 */
+  margin: 0; /* 2 */
+  text-transform: none; /* 3 */
+  background: none; /* 4 */
+  border: none; /* 4 */
+  padding: 0; /* 4 */
+  display: block;
+  overflow: visible; /* 5 */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+/* 6 */
+// 移除内联边框和内边距 in Firefox.
+  button::-moz-focus-inner, // 移除内联边框和内边距 in Firefox.
+  [type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+// 取消外边框.
+  button:-moz-focusring, // 取消外边框.
+  [type="button"]:-moz-focusring {
+  outline: none;
+}
+button:focus, [type="button"]:focus {
+    outline: none
+}
+/**
+ * 删除默认的垂直滚动条 in IE.
+ */
+textarea {
+  overflow: auto;
+  resize: none;
+  word-break: break-all
+}
+textarea:focus {
+    outline: none
+}
+/**
+ * 1. 添加盒模型 in IE 10-.
+ * 2. 内边距为 0 in IE 10-.
+ */
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+/**
+ * 更正递增和递减按钮的光标样式 in Chrome.
+ */
+[type="number"] {
+  outline: none
+}
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+    display: none
+}
+/**
+ * 1. 自定义样式 in Chrome and Safari.
+ * 2. 取消外边框 in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* 1 */
+  outline: none; /* 2 */
+  border: none;
+  border: 1px solid
+}
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    // 移除内边距和按钮 in Chrome and Safari on macOS.
+    appearance: none
+}
+/* Hidden
+   ========================================================================== */
+/**
+ * 隐藏域 in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+/**
+ * 1. 正确的不能点击的类型风格 in iOS and Safari.
+ * 2. 字体为 `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+          appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}

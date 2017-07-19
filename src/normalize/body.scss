@@ -1,0 +1,11 @@
+@import "./config.scss";
+
+/**
+ * 清除 body 的默认样式
+ */
+
+body {
+  margin: 0;
+  font-family: $base-font-family; /* 1 */
+  font-size: $base-font-size;
+}
