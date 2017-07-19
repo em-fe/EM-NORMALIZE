@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iq9891/EM-NORMALIZE.git"
+    "url": "git+https://github.com/em-fe/EM-NORMALIZE.git"
   },
   "keywords": [
     "normalize"
@@ -18,9 +18,9 @@
   "author": "李梦龙",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iq9891/EM-NORMALIZE/issues"
+    "url": "https://github.com/em-fe/EM-NORMALIZE/issues"
   },
-  "homepage": "https://github.com/iq9891/EM-NORMALIZE#readme",
+  "homepage": "https://github.com/em-fe/EM-NORMALIZE#readme",
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
