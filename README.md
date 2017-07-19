@@ -19,3 +19,12 @@
 
 * 每个浏览器的最后2个版本
 * IE 9 及 IE9 以上版本
+
+## 命令
+
+* `npm install`
+* `npm start`
+  * 打包
+  * css 语法检测
+
+## 运行 `test/index.html`
