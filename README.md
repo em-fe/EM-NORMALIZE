@@ -1,6 +1,9 @@
 # EM-NORMALIZE
 恢复标签最初形态
 
+[![em-normalize](https://img.shields.io/npm/v/em-normalize.svg?style=flat-square)](https://www.npmjs.org/package/em-normalize)
+[![NPM downloads](http://img.shields.io/npm/dm/em-normalize.svg?style=flat-square)](https://npmjs.org/package/em-normalize)
+[![NPM downloads](https://img.shields.io/npm/dt/em-normalize.svg?style=flat-square)](https://npmjs.org/package/em-normalize)
 
 ## 功能
 
