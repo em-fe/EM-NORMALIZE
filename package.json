@@ -1,6 +1,6 @@
 {
   "name": "em-normalize",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "项目样式初始化",
   "main": "dist/em-normalize.css",
   "scripts": {
