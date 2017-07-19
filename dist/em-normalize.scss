@@ -1,0 +1,420 @@
+/**
+ * 修正所有浏览器中的行高。
+ * IE在Windows Phone和iOS的时候，在改变方向后防止字体大小的调整。
+ */
+
+html {
+  line-height: 1; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * 清除 body 的默认样式
+ */
+
+body {
+  margin: 0;
+  font-family: '微软雅黑'; /* 1 */
+  font-size: 14px;
+}
+
+/**
+ * 修正样式 in Chrome, Firefox, and Safari.
+ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* 列表
+   ========================================================================== */
+
+/**
+ * 正常显示
+ */
+
+ul, ol, dl {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+dd, dt {
+  margin: 0;
+}
+
+/* 超链
+   ========================================================================== */
+
+/**
+ * 正常显示
+ * 1. 删除 IE 10 中活动链接的灰色背景.
+ * 2. 删除 IOS 8+ 和 Safari 8+ 中强调的链接间隙.
+ * 3. 去除下划线
+ * 4. 去除 focus 时候的外边框
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration: none /* 3 */
+}
+
+a:focus {
+    outline: none; /* 4 */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/**
+ * 火狐下 去掉加粗
+ */
+
+th {
+  font-weight: 400;
+}
+
+/**
+ * 删除链接内部图像的边框 in IE 10-.
+ */
+
+img {
+  border: none;
+}
+
+/**
+ * 正常显示
+ */
+
+p {
+  margin: 0;
+}
+
+/**
+ * 1. 浏览器中改变样式.
+ * 2. 移除外边距 in Firefox and Safari.
+ */
+
+input, optgroup, select, textarea {
+  font-family: '微软雅黑'; /* 1 */
+  font-size: 14px; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * 溢出隐藏 in IE.
+ * 1. 显示溢出 in Edge.
+ */
+
+input {
+  overflow: visible; /* 1 */
+}
+
+/**
+ * 删除文本转换的继承 in Edge, Firefox, and IE.
+ * 1. 删除文本转换的继承 in Firefox.
+ */
+
+select {
+  text-transform: none; /* 1 */
+  outline: none
+}
+
+select:focus {
+    outline: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video` controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+[type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button /* 2 */
+}
+
+[type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+    // 移除内联边框和内边距 in Firefox.
+    border-style: none;
+    padding: 0;
+    // 取消外边框.
+    outline: none;
+}
+
+/** button
+ * 1. 浏览器中改变样式.
+ * 2. 移除外边距 in Firefox and Safari.
+ * 3. 删除文本转换的继承 in Firefox
+ * 4. 背景，边框，内边距
+ * 5. 显示溢出 in Edge.
+ * 6. 自定义样式 in Chrome and Safari.
+ */
+
+button, [type="button"] {
+  font-family: '微软雅黑'; /* 1 */
+  font-size: 14px; /* 1 */
+  margin: 0; /* 2 */
+  text-transform: none; /* 3 */
+  background: none; /* 4 */
+  border: none; /* 4 */
+  padding: 0; /* 4 */
+  display: block;
+  overflow: visible; /* 5 */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* 6 */
+
+// 移除内联边框和内边距 in Firefox.
+  button::-moz-focus-inner, // 移除内联边框和内边距 in Firefox.
+  [type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+// 取消外边框.
+  button:-moz-focusring, // 取消外边框.
+  [type="button"]:-moz-focusring {
+  outline: none;
+}
+
+button:focus, [type="button"]:focus {
+    outline: none;
+}
+
+/**
+ * 删除默认的垂直滚动条 in IE.
+ */
+
+textarea {
+  overflow: auto;
+  resize: none;
+  word-break: break-all
+}
+
+textarea:focus {
+    outline: none;
+}
+
+/**
+ * 1. 添加盒模型 in IE 10-.
+ * 2. 内边距为 0 in IE 10-.
+ */
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * 更正递增和递减按钮的光标样式 in Chrome.
+ */
+
+[type="number"] {
+  outline: none
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+    display: none;
+}
+
+/**
+ * 1. 自定义样式 in Chrome and Safari.
+ * 2. 取消外边框 in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; /* 1 */
+  outline: none; /* 2 */
+  border: none;
+  border: 1px solid
+}
+
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+    // 移除内边距和按钮 in Chrome and Safari on macOS.
+    appearance: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * 隐藏域 in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. 正确的不能点击的类型风格 in iOS and Safari.
+ * 2. 字体为 `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+          appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * 取消加粗
+ */
+
+b, strong {
+  font-weight: 400;
+}
+
+/**
+ * 取消斜体
+ */
+
+i, em {
+  font-style: normal;
+}
+
+/**
+ * 渲染之前隐藏
+ */
+
+[v-cloak] {
+  display: none;
+}
+
+/**
+ * 防止 `sub` and `sup` 影响所有浏览器的行高度的元素。
+ */
+
+sub, sup {
+  font-size: 14px;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/**
+ * 1. 正常显示 in IE 9-.
+ * 2. 添加对齐方式 in Chrome, Firefox, and Opera.
+ * 3. 恢复默认
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+  border: none; /* 3 */
+  background: none; /* 3 */
+}
+
+/* 文本的语义
+   ========================================================================== */
+
+/**
+ * 1. 移除边框 在 Chrome 57- 和 Firefox 39-.
+ * 2. 取消下划线 in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: none; /* 2 */
+}
+
+/**
+ * 设置通用字号
+ */
+
+code, kbd, samp {
+  font-size: 14px;
+}
+
+/**
+ * 取消斜体等字体样式 in Android 4.3-.
+ */
+
+dfn {
+  font-style: normal;
+}
+
+/**
+ * 重置 background 和 color in IE 9-.
+ */
+
+mark {
+  background: none;
+  color: #333;
+}
+
+/**
+ * 通用字号
+ */
+
+small {
+  font-size: 14px;
+}
+
+/* 嵌入的内容
+   ========================================================================== */
+
+/**
+ * 溢出隐藏 in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/**
+ * 显示正常 in Firefox.
+ */
+
+fieldset {
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 正常显示 in IE.
+ */
+
+template {
+  display: none;
+}

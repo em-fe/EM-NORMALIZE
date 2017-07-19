@@ -1,0 +1,12 @@
+/**
+ * 修正所有浏览器中的行高。
+ * IE在Windows Phone和iOS的时候，在改变方向后防止字体大小的调整。
+ */
+
+html {
+  line-height: 1; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

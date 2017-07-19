@@ -1,0 +1,21 @@
+
+/* 超链
+   ========================================================================== */
+
+/**
+ * 正常显示
+ * 1. 删除 IE 10 中活动链接的灰色背景.
+ * 2. 删除 IOS 8+ 和 Safari 8+ 中强调的链接间隙.
+ * 3. 去除下划线
+ * 4. 去除 focus 时候的外边框
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  text-decoration: none /* 3 */
+}
+
+a:focus {
+    outline: none /* 4 */
+}

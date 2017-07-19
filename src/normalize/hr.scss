@@ -1,0 +1,10 @@
+/**
+ * 1. 在Firefox中添加正确的框大小.
+ * 2. 显示溢出 在 Edge 和 IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
